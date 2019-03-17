@@ -1,0 +1,744 @@
+<html>
+  <head>
+    <title>MultiFilters</title>
+    <link rel="stylesheet" type="text/css" href="css/multifilter.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script defer src="js/multifilter.js"></script>
+    <script defer src="js/custom.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        
+      </div>
+    </nav>
+      
+    <div class="container text-center">    
+      <div class="row content">
+        <div class="col-sm-4 sidenav">
+          <!-- filters section -->
+          <div class="panel-group sections" id="filters">
+            <div class="panel panel-primary filter-attributes">
+              <div class="panel-heading">SHIP</div>
+              <div class="panel-body">
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Silver Muse</button>
+                  <input type='checkbox' class='hidden' name='shipname' id='silver-muse' value='silver-muse' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Silver Moon</button>
+                  <input type='checkbox' class='hidden' name='shipname' id='silver-moon' value='silver-moon' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Silver Explorer</button>
+                  <input type='checkbox' class='hidden' name='shipname' id='silver-explorer' value='silver-explorer' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Silver Galapagos</button>
+                  <input type='checkbox' class='hidden' name='shipname' id='silver-galapagos' value='silver-galapagos' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Silver Shadow</button>
+                  <input type='checkbox' class='hidden' name='shipname' id='silver-shadow' value='silver-shadow' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Silver Spirit</button>
+                  <input type='checkbox' class='hidden' name='shipname' id='silver-spirit' value='silver-spirit' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Silver Whisper</button>
+                  <input type='checkbox' class='hidden' name='shipname' id='silver-whisper' value='silver-whisper' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Silver Wind</button>
+                  <input type='checkbox' class='hidden' name='shipname' id='silver-wind' value='silver-wind' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Silver Discoverer</button>
+                  <input type='checkbox' class='hidden' name='shipname' id='silver-discoverer' value='silver-discoverer' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Silver Cloud</button>
+                  <input type='checkbox' class='hidden' name='shipname' id='silver-cloud' value='silver-cloud' />
+                </span>
+              </div>
+            </div>
+
+            <div class="panel panel-primary filter-attributes">
+              <div class="panel-heading">CRUISE TYPE</div>
+              <div class="panel-body">
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Silversea Cruise</button>
+                  <input type='checkbox' class='hidden' name='cruisetype' id='silversea-cruise' value='silversea-cruise' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Silversea Expedition</button>
+                  <input type='checkbox' class='hidden' name='cruisetype' id='silversea-expedition' value='silversea-expedition' />
+                </span>
+              </div>
+            </div>
+            
+            <div class="panel panel-primary filter-attributes">
+              <div class="panel-heading">COUNTRY</div>
+              <div class="panel-body">
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>France</button>
+                  <input type='checkbox' class='hidden' name='country' id='france' value='france' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Singapore</button>
+                  <input type='checkbox' class='hidden' name='country' id='singapore' value='singapore' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>China</button>
+                  <input type='checkbox' class='hidden' name='country' id='china' value='china' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Philippines</button>
+                  <input type='checkbox' class='hidden' name='country' id='philippines' value='philippines' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Spain</button>
+                  <input type='checkbox' class='hidden' name='country' id='spain' value='spain' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Greece</button>
+                  <input type='checkbox' class='hidden' name='country' id='greece' value='greece' />
+                </span>
+              </div>
+            </div>
+
+            <div class="panel panel-primary filter-attributes">
+              <div class="panel-heading">DESTINATION</div>
+              <div class="panel-body">
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Africa and Indian Ocean</button>
+                  <input type='checkbox' class='hidden' name='destination' id='africa-indian-ocean' value='africa-indian-ocean' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Alaska</button>
+                  <input type='checkbox' class='hidden' name='destination' id='alaska' value='alaska' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>American West Coast</button>
+                  <input type='checkbox' class='hidden' name='destination' id='american-west-coast' value='american-west-coast' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Antarctica</button>
+                  <input type='checkbox' class='hidden' name='destination' id='antarctica' value='antarctica' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Arctic & Greenland</button>
+                  <input type='checkbox' class='hidden' name='destination' id='arctic-&-greenland' value='arctic-&-greenland' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Asia</button>
+                  <input type='checkbox' class='hidden' name='destination' id='asia' value='asia' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Australia & New Zealand</button>
+                  <input type='checkbox' class='hidden' name='destination' id='australia-&-new-zealand' value='australia-&-new-zealand' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Canada & New England</button>
+                  <input type='checkbox' class='hidden' name='destination' id='canada-&-new-england' value='canada-&-new-england' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Caribbean & Central America</button>
+                  <input type='checkbox' class='hidden' name='destination' id='caribbean-&-central-america' value='caribbean-&-central-america' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Galápagos Islands</button>
+                  <input type='checkbox' class='hidden' name='destination' id='galápagos-islands' value='galápagos-islands' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Mediterranean</button>
+                  <input type='checkbox' class='hidden' name='destination' id='mediterranean' value='mediterranean' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Northern Europe & British Isles</button>
+                  <input type='checkbox' class='hidden' name='destination' id='northern-europe-&-british-isles' value='northern-europe-&-british-isles' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Russian Far East</button>
+                  <input type='checkbox' class='hidden' name='destination' id='russian-far-east' value='russian-far-east' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>South America</button>
+                  <input type='checkbox' class='hidden' name='destination' id='south-america' value='south-america' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>South Pacific Islands</button>
+                  <input type='checkbox' class='hidden' name='destination' id='south-pacific-islands' value='south-pacific-islands' />
+                </span>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Transoceanic</button>
+                  <input type='checkbox' class='hidden' name='destination' id='transoceanic' value='transoceanic' />
+                </span>
+              </div>
+            </div>            
+
+            <div class="panel panel-primary filter-attributes">
+              <div class="panel-heading">DEPARTURE</div>
+              <div class="panel-body">
+                <h4>2019</h4>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>JAN</button>
+                  <input type='checkbox' class='hidden' name='departure' id='jan-2019' value='jan-2019' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>FEB</button>
+                  <input type='checkbox' class='hidden' name='departure' id='feb-2019' value='feb-2019' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>MAR</button>
+                  <input type='checkbox' class='hidden' name='departure' id='mar-2019' value='mar-2019' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>APR</button>
+                  <input type='checkbox' class='hidden' name='departure' id='apr-2019' value='apr-2019' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>MAY</button>
+                  <input type='checkbox' class='hidden' name='departure' id='may-2019' value='may-2019' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>JUN</button>
+                  <input type='checkbox' class='hidden' name='departure' id='jun-2019' value='jun-2019' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>JUL</button>
+                  <input type='checkbox' class='hidden' name='departure' id='jul-2019' value='jul-2019' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>AUG</button>
+                  <input type='checkbox' class='hidden' name='departure' id='aug-2019' value='aug-2019' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>SEP</button>
+                  <input type='checkbox' class='hidden' name='departure' id='sep-2019' value='sep-2019' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>OCT</button>
+                  <input type='checkbox' class='hidden' name='departure' id='oct-2019' value='oct-2019' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>NOV</button>
+                  <input type='checkbox' class='hidden' name='departure' id='nov-2019' value='nov-2019' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>DEC</button>
+                  <input type='checkbox' class='hidden' name='departure' id='dec-2019' value='dec-2019' />
+                </span>
+
+                <hr />
+
+                <h4>2020</h4>
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>JAN</button>
+                  <input type='checkbox' class='hidden' name='departure' id='jan-2020' value='jan-2020' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>FEB</button>
+                  <input type='checkbox' class='hidden' name='departure' id='feb-2020' value='feb-2020' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>MAR</button>
+                  <input type='checkbox' class='hidden' name='departure' id='mar-2020' value='mar-2020' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>APR</button>
+                  <input type='checkbox' class='hidden' name='departure' id='apr-2020' value='apr-2020' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>MAY</button>
+                  <input type='checkbox' class='hidden' name='departure' id='may-2020' value='may-2020' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>JUN</button>
+                  <input type='checkbox' class='hidden' name='departure' id='jun-2020' value='jun-2020' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>JUL</button>
+                  <input type='checkbox' class='hidden' name='departure' id='jul-2020' value='jul-2020' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>AUG</button>
+                  <input type='checkbox' class='hidden' name='departure' id='aug-2020' value='aug-2020' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>SEP</button>
+                  <input type='checkbox' class='hidden' name='departure' id='sep-2020' value='sep-2020' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>OCT</button>
+                  <input type='checkbox' class='hidden' name='departure' id='oct-2020' value='oct-2020' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>NOV</button>
+                  <input type='checkbox' class='hidden' name='departure' id='nov-2020' value='nov-2020' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>DEC</button>
+                  <input type='checkbox' class='hidden' name='departure' id='dec-2020' value='dec-2020' />
+                </span>
+              </div>
+            </div>
+
+            <div class="panel panel-primary filter-attributes">
+              <div class="panel-heading">EXCLUSIVE OFFERS</div>
+              <div class="panel-body">
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Only Breakfast</button>
+                  <input type='checkbox' class='hidden' name='exclusiveoffers-breakfast' id='breakfast' value='breakfast' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Only Lunch</button>
+                  <input type='checkbox' class='hidden' name='exclusiveoffers-lunch' id='lunch' value='lunch' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Half Board</button>
+                  <input type='checkbox' class='hidden' name='exclusiveoffers-halfboard' id='halfboard' value='halfboard' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>Full Board</button>
+                  <input type='checkbox' class='hidden' name='exclusiveoffers-fullboard' id='fullboard' value='fullboard' />
+                </span>
+
+                <span class='button-checkbox'>
+                  <!-- set name for input to identify filtered records -->
+                  <button type='button' class='btn' data-color='warning'>All Inclusive</button>
+                  <input type='checkbox' class='hidden' name='exclusiveoffers-inclusive' id='inclusive' value='inclusive' />
+                </span>
+              </div>
+            </div>
+
+            <br>
+            <input type='button' id='none' value='Clear all filters' class="btn btn-sm btn-default"></input>
+          </div>
+
+          
+        </div>
+        <div class="col-sm-8 text-left"> 
+          <div class='sections'>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-muse' data-cruisetype='silversea-cruise' data-destination="asia" data-departure="mar-2019" data-country="philippines" data-exclusiveoffers-lunch="lunch" data-exclusiveoffers-breakfast="breakfast">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>March 15, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Muse </div>
+                  <div> Cruise Type: Silversea Cruise </div>
+                  <div>Country: Philippines</div>
+                  <div>Destination: Asia </div>
+                  <div>Exclusive Offers: Breakfast, Lunch</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-spirit' data-cruisetype='silversea-cruise' data-destination="central-america-caribbean" data-departure="mar-2019" data-country="singapore" data-exclusiveoffers-halfboard="halfboard" data-exclusiveoffers-fullboard="fullboard" data-exclusiveoffers-inclusive="inclusive">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>March 20, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Spirit </div>
+                  <div> Cruise Type: Silversea Cruise </div>
+                  <div>Country: Singapore</div>
+                  <div>Destination: Central America Caribbean </div>
+                  <div>Exclusive Offers: Half Board, Full Board, All Inclusive</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-explorer' data-cruisetype='silversea-expedition' data-destination="south-pacific-islands" data-departure="apr-2019" data-country="philippines" data-exclusiveoffers-lunch="lunch" data-exclusiveoffers-breakfast="breakfast">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>April 21, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Explorer </div>
+                  <div> Cruise Type: Silversea Expedition </div>
+                  <div>Country: Philippines</div>
+                  <div>Destination: South Pacific Islands </div>
+                  <div>Exclusive Offers: Breakfast, Lunch</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-discoverer' data-cruisetype='silversea-expedition' data-destination="asia" data-departure="mar-2019" data-country="spain" data-exclusiveoffers-lunch="lunch" data-exclusiveoffers-breakfast="breakfast">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>March 10, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Discoverer </div>
+                  <div> Cruise Type: Silversea Expedition </div>
+                  <div>Country: Spain</div>
+                  <div>Destination: Asia </div>
+                  <div>Exclusive Offers: Breakfast, Lunch</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-shadow' data-cruisetype='silversea-cruise' data-destination="asia" data-departure="apr-2019" data-country="philippines" data-exclusiveoffers-lunch="lunch" data-exclusiveoffers-breakfast="breakfast">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>April 25, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Shadow </div>
+                  <div> Cruise Type: Silversea Cruise </div>
+                  <div>Country: Philippines</div>
+                  <div>Destination: Asia </div>
+                  <div>Exclusive Offers: Breakfast, Lunch, Half Board, Full Board, All Inclusive</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-shadow' data-cruisetype='silversea-cruise' data-destination="asia" data-departure="sep-2019" data-country="singapore" data-exclusiveoffers-inclusive="inclusive">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>Sep 7, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Shadow </div>
+                  <div> Cruise Type: Silversea Cruise </div>
+                  <div>Country: Singapore</div>
+                  <div>Destination: Asia </div>
+                  <div>Exclusive Offers: All Inclusive</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-spirit' data-cruisetype='silversea-cruise' data-destination="central-america-caribbean" data-departure="oct-2019" data-country="philippines" data-exclusiveoffers-lunch="lunch" data-exclusiveoffers-fullboard="fullboard">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>October 19, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Spirit </div>
+                  <div> Cruise Type: Silversea Cruise </div>
+                  <div>Country: Philippines</div>
+                  <div>Destination: Central America Caribbean </div>
+                  <div>Exclusive Offers: Lunch, Full Board</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-spirit' data-cruisetype='silversea-cruise' data-destination="central-america-caribbean" data-departure="dec-2019" data-country="singapore" data-exclusiveoffers-halfboard="halfboard" data-exclusiveoffers-breakfast="breakfast">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>December 27, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Spirit </div>
+                  <div> Cruise Type: Silversea Cruise </div>
+                  <div>Country: Singapore</div>
+                  <div>Destination: Central America Caribbean </div>
+                  <div>Exclusive Offers: Breakfast, Half Board</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-spirit' data-cruisetype='silversea-cruise' data-destination="central-america-caribbean" data-departure="jul-2019" data-country="greece" data-exclusiveoffers-halfboard="halfboard" data-exclusiveoffers-lunch="lunch" data-exclusiveoffers-breakfast="breakfast">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>July 11, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Spirit </div>
+                  <div> Cruise Type: Silversea Cruise </div>
+                  <div>Country: Greece</div>
+                  <div>Destination: Central America Caribbean </div>
+                  <div>Exclusive Offers: Breakfast, Lunch, Half Board</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-galapagos' data-cruisetype='silversea-expedition' data-destination="galapagos-islands" data-departure="nov-2019" data-country="china" data-exclusiveoffers-lunch="lunch">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>November 2, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Galapagos </div>
+                  <div> Cruise Type: Silversea Expedition </div>
+                  <div>Country: China</div>
+                  <div>Destination: Galapagos Islands </div>
+                  <div>Exclusive Offers: Lunch</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-shadow' data-cruisetype='silversea-cruise' data-destination="asia" data-departure="may-2019" data-country="france" data-exclusiveoffers-halfboard="halfboard">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>May 30, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Shadow </div>
+                  <div> Cruise Type: Silversea Cruise </div>
+                  <div>Country: France</div>
+                  <div>Destination: Asia </div>
+                  <div>Exclusive Offers: Half Board</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-cloud-expedition' data-cruisetype='silversea-expedition' data-destination="africa-indian-ocean" data-departure="aug-2019" data-country="greece" data-exclusiveoffers-fullboard="fullboard">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>August 15, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Cloud-expedition </div>
+                  <div> Cruise Type: Silversea Expedition </div>
+                  <div>Country: Greece</div>
+                  <div>Destination: Africa Indian Ocean </div>
+                  <div>Exclusive Offers: Full Board</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-shadow' data-cruisetype='silversea-cruise' data-destination="africa-indian-ocean" data-departure="aug-2019" data-country="philippines" data-exclusiveoffers-inclusive="inclusive"  data-exclusiveoffers-fullboard="fullboard">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>Aug 26, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Shadow </div>
+                  <div> Cruise Type: Silversea Cruise </div>
+                  <div>Country: Philippines</div>
+                  <div>Destination: Africa Indian Ocean </div>
+                  <div>Exclusive Offers: Full Board, All Inclusive</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-shadow' data-cruisetype='silversea-cruise' data-destination="africa-indian-ocean" data-departure="jul-2019" data-country="philippines" data-exclusiveoffers-inclusive="inclusive">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>July 5, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Shadow </div>
+                  <div> Cruise Type: Silversea Cruise </div>
+                  <div>Country: Philippines</div>
+                  <div>Destination: Africa Indian Ocean </div>
+                  <div>Exclusive Offers: All Inclusive</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-spirit' data-cruisetype='silversea-cruise' data-destination="transoceanic" data-departure="jun-2019" data-country="greece" data-exclusiveoffers-halfboard="halfboard" data-exclusiveoffers-fullboard="fullboard">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>Jun 4, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Spirit </div>
+                  <div> Cruise Type: Silversea Cruise </div>
+                  <div>Country: Greece</div>
+                  <div>Destination: Transoceanic </div>
+                  <div>Exclusive Offers: Half Board, Full Board</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-muse' data-cruisetype='silversea-cruise' data-destination="asia" data-departure="may-2020" data-country="france" data-exclusiveoffers-halfboard="halfboard" data-exclusiveoffers-lunch="lunch" data-exclusiveoffers-fullboard="fullboard" data-exclusiveoffers-inclusive="inclusive">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>May 15, 2020</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Muse </div>
+                  <div> Cruise Type: Silversea Cruise </div>
+                  <div>Country: France</div>
+                  <div>Destination: Asia </div>
+                  <div>Exclusive Offers: Lunch, Half Board, Full Board, All Inclusive</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-discoverer' data-cruisetype='silversea-expedition' data-destination="australia-new-zealand" data-departure="jul-2020" data-country="france" data-exclusiveoffers-breakfast="breakfast" data-exclusiveoffers-lunch="lunch" data-exclusiveoffers-fullboard="fullboard">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>July 22, 2020</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Discoverer </div>
+                  <div> Cruise Type: Silversea Expedition </div>
+                  <div>Country: France</div>
+                  <div>Destination: Australia New Zealand </div>
+                  <div>Exclusive Offers: Breakfast, Lunch, Full Board</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-spirit' data-cruisetype='silversea-cruise' data-destination="transoceanic" data-departure="apr-2020" data-country="singapore" data-exclusiveoffers-breakfast="breakfast" data-exclusiveoffers-lunch="lunch">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>April 6, 2020</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Spirit </div>
+                  <div> Cruise Type: Silversea Cruise </div>
+                  <div>Country: Singapore</div>
+                  <div>Destination: Transoceanic </div>
+                  <div>Exclusive Offers: Breakfast, Lunch</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-galapagos' data-cruisetype='silversea-expedition' data-destination="galapagos-islands" data-departure="mar-2019" data-country="france" data-exclusiveoffers-lunch="lunch">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>March 17, 2019</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Galapagos </div>
+                  <div> Cruise Type: Silversea Expedition </div>
+                  <div>Country: France</div>
+                  <div>Destination: Galapagos Islands </div>
+                  <div>Exclusive Offers: Lunch</div>
+                </div>
+              </div>
+            </div>
+            <!-- set data value for each filter name or input name to identify or filter the record. data name and value must be same as filter/input name -->
+            <div class='row grid-products' data-shipname='silver-muse' data-cruisetype='silversea-cruise' data-destination="asia" data-departure="feb-2020" data-country="spain" data-exclusiveoffers-breakfast="breakfast">
+              <div class='col-sm-12'>
+                <div class='col-sm-4'>
+                  <div>February 28, 2020</div>
+                  <div>from US$ 3,300</div>
+                </div>
+                <div class='col-sm-8'>
+                  <div>Ship Name: Silver Muse </div>
+                  <div> Cruise Type: Silversea Cruise </div>
+                  <div>Country: Spain</div>
+                  <div>Destination: Asia </div>
+                  <div>Exclusive Offers: Breakfast</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

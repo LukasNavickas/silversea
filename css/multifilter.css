@@ -1,0 +1,39 @@
+
+.grid-products {
+  border: 1px solid #EFEFEF;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+[data-colour='red'] {
+  background: red;
+}
+
+[data-colour='yellow'] {
+  background: yellow;
+}
+
+[data-colour='green'] {
+  background: green;
+}
+
+[data-colour='blue'] {
+  background: blue;
+}
+
+[data-colour='brown'] {
+  background: brown;
+}
+
+.grid-variants {
+  display: inline-block;
+  border: 1px solid black;
+  width: 100px;
+  margin: 2px;
+}
+
+.large-boxes {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
